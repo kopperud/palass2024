@@ -6,8 +6,10 @@ library(patchwork)
 
 library(deeptime)
 
+setwd("~/projects/palass2024")
+
 tree_extant <- read.beast.newick("output/osteoglossomorpha_extant.tre")
-tree_total <- read.beast.newick("output/osteoglossomorpha_extinct.tre")
+tree_total <- read.beast.newick("output/osteoglossomorpha_FcBhDc.tre")
 
 tl_extant <- sum(tree_extant@phylo$edge.length)
 tl_total <- sum(tree_total@phylo$edge.length)
